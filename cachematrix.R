@@ -16,8 +16,9 @@ getinverse <- function() Mat_Inv
 list(set=set, get=get, setinverse= setinverse, getinverse=getinverse)
 }
 
-## Write a short comment describing this function
-
+## The function cacheSolve returns the inverse of matrix created with makecacheMatrix function.
+## If the cached inverse is available, cacheSolve retrieves it, if not available it computes
+## and caches the matrix and returns it.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 }
