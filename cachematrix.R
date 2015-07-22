@@ -3,12 +3,18 @@
 ## If the matrix inverse has already been calculated it will find it in the cache
 ## and return it, if not it will calculate again
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-
+Mat_Inv <- NULL
+set <- function(y){
+x <<- y
+Mat_Inv <<- NULL
 }
-
+get <- function ()x
+setinverse <- function(solve) Mat_Inv <<- solve
+getinverse <- function() Mat_Inv
+list(set=set, get=get, setinverse= setinverse, getinverse=getinverse)
+}
 
 ## Write a short comment describing this function
 
